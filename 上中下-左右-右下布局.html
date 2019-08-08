@@ -63,15 +63,23 @@
             bottom: 0;
             text-align: center;
         }
-        .content-main {
+        .content-top{
+            position: absolute;
+            top:0px;
+            width: 100%;
+            height: 30px;
+            background-color: aqua;
+            z-index: 120;
+        }
+        .content-main{
             position: absolute;
             width: 100%;
-            top: 0;
+            top: 30px;
             bottom: 30px;
             overflow: auto;
             z-index: 120;
         }
-        .content-bottom {
+        .content-bottom{
             position: absolute;
             bottom:0px;
             width: 100%;
@@ -88,6 +96,7 @@
         <div class="mycontent">
             <div class="sidebar">sidebar</div>
             <div class="content">
+                    <div class="content-top"></div>
                     <div class="content-main">
                         头部</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>
                         内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>内容</br>
